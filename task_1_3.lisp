@@ -1,0 +1,5 @@
+(defconstant L (list 4 5 6 93 31 12 -9  0 21 19))
+(defun found (list elem)
+(cond ((eq elem (car list)) 0)
+        (t (+ 1 (found elem (cdr list))))))
+(found L 4)        
