@@ -1,4 +1,4 @@
-(defconstant testLlist (list 1 1 1 1 0 1 0 1 1 0 0 0 1 1))
+(defconstant L (list 1 1 1 1 0 1 0 1 1 0 0 0 1 1))
 
 (defun comprsf (all i)
     (if (= (nth 1 i) (nth 1 (car all)))
@@ -53,6 +53,6 @@
     (reverse(reduce #'deccomprsf lst :initial-value (list)))
 )
 
-(compress_list testList)
+(compress_list L)
 
-(decompress_list (compress_list testList))
+(decompress_list (compress_list L))
